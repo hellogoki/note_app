@@ -1,0 +1,99 @@
+:root{
+    --main-color:rgba(41, 128, 185,1.0);
+    --main-color-light:rgba(41, 128, 185,0.2);
+    --accent-color:rgba(243, 156, 18,1.0);
+    --accent-color-light:rgba(243, 156, 18,0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-title{
+    font-size: 2rem;
+}
+.header, .gorev-form {
+    min-height: 20vh;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(245, 231, 205);
+    outline: none;
+}
+.btn-gorev-ekle{
+    color:var(--accent-color);
+    cursor: pointer;
+}
+.btn-gorev-ekle:hover{ /* butonun üzerine geldiginde..*/
+    color: white;
+    background-color: var(--accent-color);
+}
+.gorev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gorev-listesi{
+    list-style: none;
+    min-width: 40%;
+    
+}
+.gorev-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    background-color: rgb(245, 231, 205);
+    transition: 0.5s ease-in-out;
+}
+.gorev-tanim{
+    flex: 1; /*digerlerinin flex degeri 0 old. için mümkün oldugunca alana yayılır */
+    padding: 0.4rem;   
+}
+.tarih-tanim {
+    opacity: 0.5;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
+
+.gorev-btn{
+    background-color: rgb(0, 206, 51);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+.gorev-btn-sil{
+    background-color: red;
+}
+.gorev-tamamlandi{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.fa-regular{
+    pointer-events: none;
+}
+
+.kaybol{
+    transform: scale(0);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to bottom right, var(--main-color), var(--main-color-light) );
+    /* sol üstten sag alta dogru bir renk geçişi */
+    background-repeat: no-repeat; /* renk geçişi tekrar etmesin */
+    min-height: 100vh; /* bütün ekrana yansı */
+    
+}
